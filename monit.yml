@@ -7,7 +7,7 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus:/etc/prometheus
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
@@ -26,9 +26,21 @@ services:
 
   node-exporter:
     image: prom/node-exporter
+    container_name: node-exporter
     ports:
       - 9100:9100
     restart: always
+
+  alertmanager:
+    image: prom/alertmanager
+    ports:
+      - 9093:9093
+    volumes:
+      - /root/monitor/alertmanager:/etc/alertmanager/
+    command:
+      - --config.file=/etc/alertmanager/alertmanager.yml
+    restart: always
+
 
 
   nginx:
@@ -41,3 +53,4 @@ services:
       # - ./main.conf:/etc/nginx/nginx.conf
         - ./default.conf:/etc/nginx/conf.d/default.conf
       # -  /root/cert:/mnt  
+

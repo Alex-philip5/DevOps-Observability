@@ -1,0 +1,26 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - "35.160.43.110:9093" # alert instance ip
+
+rule_files:
+  - alertrules.yml   # alert rule file
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['35.160.43.110:9090']
+  - job_name: 'alertmanager'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['35.160.43.110:9093']
+  - job_name: 'node_expoter'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['35.160.43.110:9100'] 

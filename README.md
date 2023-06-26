@@ -35,6 +35,8 @@ sh docker.sh
 --
 sudo apt-get install -y docker-compose
 --
+chown -R 472.472 grafana
+--
 Running Docker-Compose
 --
 Edit the default conf file with your EC2 instance Public IP

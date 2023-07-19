@@ -43,7 +43,7 @@ chown -R 472.472 grafana
 Edit the default conf file with your EC2 instance Public IP
 --
 Run the Docker compose file
-docker-compose -f docker-compose. yml up -d
+docker-compose -f monit.yml up -d
 --
 
 

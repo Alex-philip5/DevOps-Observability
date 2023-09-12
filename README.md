@@ -1,7 +1,4 @@
-# DevOps-Observability
-
-
-Observability Stack- Prometheus+Grafana+Alertmanager
+# DevOps-Observability FOSS Stack
 --![Prometheus-Server_Chart](https://github.com/Allu-Philip/DevOps-Observability/assets/33429916/8287cec1-aa63-4896-9336-83059683c9f5)
 --
 After cloning, we now need to change the configuration files targets.json and prometheus.yml. 

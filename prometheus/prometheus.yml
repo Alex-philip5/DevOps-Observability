@@ -6,21 +6,12 @@ alerting:
   alertmanagers:
     - static_configs:
         - targets:
-            - "34.219.121.98:9093" # alert instance ip
-
+            - "localhost:9093" 
 rule_files:
-  - alertrules.yml   # alert rule file
+  - alertrules.yml
 
 scrape_configs:
-  - job_name: 'prometheus'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['35.160.43.110:9090']
-  - job_name: 'alertmanager'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['35.160.43.110:9093']
-  - job_name: 'node_expoter'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['35.160.43.110:9100'] 
+- job_name: 'Host'
+  file_sd_configs:
+  - files:
+    - 'targets.json'

@@ -8,7 +8,7 @@ groups:
   rules:
   - alert: HighCpuUsage
     expr: sum by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100 < 10
-    for: 5m
+    for: 1m
     labels:
       severity: warning
     annotations:
@@ -18,7 +18,7 @@ groups:
   rules:
   - alert: HighMemoryUsage
     expr: sum(container_memory_usage_bytes) by (namespace) > 90 * 1024 * 1024 * 1024
-    for: 5m
+    for: 1m
     labels:
       severity: warning
     annotations:
@@ -28,7 +28,7 @@ groups:
   rules:
   - alert: HighStorageUsage
     expr: (node_filesystem_size_bytes - node_filesystem_free_bytes) / node_filesystem_size_bytes > 0.9
-    for: 10m
+    for: 1m
     labels:
       severity: warning
     annotations:

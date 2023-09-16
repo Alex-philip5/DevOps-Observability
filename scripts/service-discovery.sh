@@ -1,4 +1,21 @@
 #! /bin/bash
+echo "Service Discovery V1.0"
+echo "---------------------------------------------------"
+echo "Make sure you run this script as root user..."
+echo "---------------------------------------------------"
+sleep 1
+echo "Checking User Privileges..."
+sleep 2
+if [ "$UID" != 0 ]; then
+        echo "---------------------------------------------------"
+        echo "[Permission Error] Run the script as root user"
+        echo "Exiting !"
+        echo "---------------------------------------------------"
+        exit 1
+fi
+echo "==============================================="
+echo "Service Discovery"
+echo "==============================================="
 echo "Fetching the Public IP Address"
 pub_ip=$(curl wgetip.com)
 file="./prometheus/prometheus.yml"

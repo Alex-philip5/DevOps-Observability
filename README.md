@@ -7,7 +7,7 @@ Therefore, we shall execute a script to automate this process.
 --
 $ cd  DevOps-Observability
 --
-$ sh scripts/service-discovery.sh
+$ bash scripts/service-discovery.sh
 --
 After all changes in configs now lets spin up the containers
 --

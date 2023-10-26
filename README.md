@@ -22,10 +22,6 @@ This repository contains the DevOps-Observability FOSS Stack. In this guide, we'
     $ docker-compose logs -f
     ```
 
-3. Update the IP Address
-
-   My public IP address, for instance, was `34.56.23.18`. Adjust it to reflect your public IP.
-
 ## Access the Webpages
 
 - Prometheus: [http://your-ip-address:9090](http://your-ip-address:9090)

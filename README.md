@@ -11,9 +11,9 @@ $ bash scripts/service-discovery.sh
 --
 After all changes in configs now lets spin up the containers
 --
-$ docker-compose -f monit.yml up -d
+$ docker-compose up -d
 --
-$ docker-compose -f monit.yml logs -f
+$ docker-compose logs -f
 --
 My public IP address, for instance, was 34.56.23.18. Adjust it to reflect yours.
 --

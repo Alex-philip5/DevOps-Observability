@@ -21,7 +21,7 @@ cat /proc/sys/vm/vfs_cache_pressure
 sudo sysctl vm.vfs_cache_pressure=50
 
 # Install essential packages
-sudo apt-get install -y curl net-tools wget unzip tree
+sudo apt-get install -y curl net-tools wget unzip tree make
 
 # Install Docker
 sudo apt-get install -y docker.io

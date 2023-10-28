@@ -2,9 +2,9 @@
 
 ![Prometheus Server Chart](https://github.com/Allu-Philip/DevOps-Observability/assets/33429916/8287cec1-aa63-4896-9336-83059683c9f5)
 
-## Introduction
 
-This repository contains the DevOps-Observability FOSS Stack. In this guide, we'll walk you through the setup process.
+## Hit the Star! ⭐
+If you are planning to use this DevOps-Observability FOSS Stack repo for learning, please hit the star. Thanks!
 
 ## Setup
 
@@ -28,8 +28,6 @@ This repository contains the DevOps-Observability FOSS Stack. In this guide, we'
 - Grafana: [http://your-ip-address:3000](http://your-ip-address:3000)
 - Alertmanager: [http://your-ip-address:9093](http://your-ip-address:9093)
 - Node Exporter: [http://your-ip-address:9100](http://your-ip-address:9100)
-
-Enjoy your learning journey with DevOps-Observability FOSS Stack!
 
 ## License
 

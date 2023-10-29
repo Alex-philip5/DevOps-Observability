@@ -1,24 +1,20 @@
 # EC2 Instance Variables
-region         = "ap-south-2"
+region         = ""
 ami_id         = "ami-04590bdf0114d5449"
 instance_type  = "t4g.nano"
-key_name       = "poc-key"
+key_name       = ""
 instance_count = 1
-subnet_ids     = ["subnet-00d9a59cb0acc1561", "subnet-0bfe5974459f3727b", "subnet-07a42a4c10943b8e5"]
+subnet_ids     = ["", "", ""]
 
 # EC2 Security Group Variables
-vpc_id  = "vpc-036bbd232dff73a78"
-
-# EC2 Userdata
-# user_data     = "user-data.sh"
+vpc_id  = ""
 
 # Tag Keys
-name        = "poc-new"
-owner       = "alex"
-environment = "dev"
-cost_center = "poc"
-application = "monit"
-
+name        = ""
+owner       = ""
+environment = ""
+cost_center = ""
+application = ""
 
 # CIDR Ingress Variables
 create_ingress_cidr        = true

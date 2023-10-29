@@ -65,8 +65,6 @@ variable "ingress_cidr_block" {
   description = "List of CIDR blocks for cidr ingress rules of the EC2 security group."
 }
 
-
-
 variable "egress_cidr_from_port" {
   type        = list(number)
   description = "List of starting ports for cidr egress rules of the EC2 security group."
@@ -86,8 +84,6 @@ variable "egress_cidr_block" {
   type        = list(string)
   description = "List of CIDR blocks for cidr egress rules of the EC2 security group."
 }
-
-
 
 variable "create_ingress_cidr" {
   type        = bool

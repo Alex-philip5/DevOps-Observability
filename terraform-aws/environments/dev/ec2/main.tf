@@ -36,8 +36,6 @@ module "security-group" {
   ingress_cidr_description = var.ingress_cidr_description
   create_ingress_cidr      = var.create_ingress_cidr
 
-
-
   egress_cidr_from_port = var.egress_cidr_from_port
   egress_cidr_to_port   = var.egress_cidr_to_port
   egress_cidr_protocol  = var.egress_cidr_protocol

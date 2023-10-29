@@ -23,11 +23,6 @@ variable "instance_count" {
   description = "Count of the ec2 instances"
 }
 
-# variable "user_data" {
-#   type        = string
-#   description = "User data script to run on the EC2 Instance"
-# }
-
 variable "subnet_ids" {
   type        = list(string)
   description = "Subnet ids of the ec2 instance"

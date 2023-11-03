@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "ec2" {
-  source             = "../../../modules/ec2"
+  source             = "../modules/ec2"
   region             = var.region
   ami_id             = var.ami_id
   instance_type      = var.instance_type
@@ -19,7 +19,7 @@ module "ec2" {
 }
 
 module "security-group" {
-  source      = "../../../modules/security-group"
+  source      = "../modules/security-group"
   region      = var.region
   tags        = var.tags
   name        = var.name

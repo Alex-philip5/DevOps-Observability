@@ -1,6 +1,6 @@
 # EC2 Instance Variables
-region         = ""
-ami_id         = "ami-04590bdf0114d5449"
+region         = "us-west-2"
+ami_id         = "ami-05f290e7e87696c29"
 instance_type  = "t4g.nano"
 key_name       = ""
 instance_count = 1
@@ -30,5 +30,4 @@ egress_cidr_from_port = [0]
 egress_cidr_to_port   = [0]
 egress_cidr_protocol  = ["-1"]
 egress_cidr_block     = ["0.0.0.0/0"]
-
 

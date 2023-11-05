@@ -24,10 +24,10 @@ If you are planning to use this DevOps-Observability FOSS Stack repo for learnin
 
 ## Access the Webpages
 
-- Prometheus:    [http://your-ip-address:9090](http://your-ip-address:9090)
-- Grafana:       [http://your-ip-address:3000](http://your-ip-address:3000)
-- Alertmanager:  [http://your-ip-address:9093](http://your-ip-address:9093)
-- Node Exporter: [http://your-ip-address:9100](http://your-ip-address:9100)
+- Prometheus:     [http://your-ip-address:9090](http://your-ip-address:9090)
+- Grafana:        [http://your-ip-address:3000](http://your-ip-address:3000)
+- Alertmanager:   [http://your-ip-address:9093](http://your-ip-address:9093)
+- Node Exporter:  [http://your-ip-address:9100](http://your-ip-address:9100)
 
 ## License
 

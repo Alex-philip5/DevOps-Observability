@@ -6,7 +6,7 @@ alerting:
   alertmanagers:
     - static_configs:
         - targets:
-            - "18.60.214.56:9093" 
+            - "127.0.0.1:9093" 
 rule_files:
   - alertrules.yml
 
